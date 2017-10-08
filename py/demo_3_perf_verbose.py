@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from cicdperfclient import Perf
+from timingsclient import Perf
 
 # Setup custom config
 CONFIG_FILE = os.path.join(

@@ -1,7 +1,7 @@
 //”./js/specs/demo-2-perf.js”
 const perf = require('timings-client-js');
 
-describe('Demo cicd-perf-api', function() {
+describe('Demo timings-client-js', function() {
     it('page performance should be within SLA', function() {
         const perf_params = perf.getApiParams({sla:{pageLoadTime: 3000}, debug: true});
         return perf.getInjectJS('navtiming', 'visual_complete')

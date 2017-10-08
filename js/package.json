@@ -1,19 +1,16 @@
 {
-    "name": "cicd-perf-api-demo",
-    "description": "Demo files for perf-api demos and presentations",
-    "version": "1.0.1",
-    "directories": {
-        "test": "tests"
-    },
+    "name": "timings-demo",
+    "description": "Demo files for timings API demos and presentations",
+    "version": "1.0.2",
     "scripts": {
-        "test": "mocha -d js"
+        "test": "mocha"
     },
     "repository": {
         "type": "git",
-        "url": "git@github.secureserver.net:mverkerk/cicd-perf-api-demo.git"
+        "url": "https://github.com/Verkurkie/timings-demo.git"
     },
     "author": "Marcel Verkerk",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "axios": "^0.16.1"
     },
@@ -22,7 +19,7 @@
         "chai-http": "^2.0.1",
         "gulp": "^3.9.1",
         "mocha": "^2.5.3",
-        "timings-client-js": "^1.0.4",
+        "timings-client-js": "^1.0.0",
         "wdio-mocha-framework": "^0.5.11",
         "wdio-selenium-standalone-service": "0.0.9",
         "webdriverio": "^4.8.0"
