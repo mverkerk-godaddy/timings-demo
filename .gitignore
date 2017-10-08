@@ -1,0 +1,56 @@
+# Editor artifacts
+.idea
+tags
+*.iml
+.jshintrc
+.tern-project
+.vscode/
+
+# Python artifacts
+*.pyc
+
+# Extracted content
+*.exe
+
+# Screenshots
+*.png
+
+# Backup yams
+*.bak
+
+# Runtime data
+/logs
+*.log
+pids
+*.pid
+*.seed
+.lock-wscript
+package-lock.json
+
+# Test artifacts
+lib-cov
+coverage
+.grunt
+test_results
+
+# Build artifacts
+/build
+/stats
+
+# Dependencies
+node_modules
+yarn.lock
+
+# OS cruft
+.DS_Store
+
+# Local config overrides
+/src/server/config/local/overrides*
+/src/server/config/local-build/overrides*
+/test/ui/config/environments*
+
+allure-results
+mocha_report.xml
+test/ui/mocha.opts
+
+/*.log*
