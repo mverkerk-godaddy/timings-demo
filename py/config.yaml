@@ -1,7 +1,7 @@
 PERF_API_URL: "http://localhost/v2/api/cicd/"
 api_params: 
  sla: 
-  pageLoadTime: 2000
+  pageLoadTime: 4000
  baseline: 
   days: 7
   perc: 75
@@ -13,8 +13,8 @@ api_params:
   esCreate: false
   passOnFailedAssert: false
  log: 
-  test_info: "Demo test_info"
-  env_tester: "Demo tester"
+  test_info: "Demo SeleniumConf17"
+  env_tester: "Windows"
   browser: "Demo browser"
-  env_target: "Demo target"
-  team: "DEMO TEAM"
+  env_target: "PROD"
+  team: "SELENIUM TEAM"

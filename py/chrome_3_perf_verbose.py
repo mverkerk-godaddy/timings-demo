@@ -20,7 +20,7 @@ PERF = Perf(CONFIG_FILE)
 # Get inject code from the perf API
 API_PARAMS = PERF.getapiparams(
     days=15,
-    es_create=False,
+    es_create=True,
     log=dict(something="crazy"))
 
 INJECT_CODE = PERF.injectjs('navtiming', 'visual_complete')
