@@ -22,19 +22,21 @@ CONFIG_FILE = os.path.join(
     '', 'config.yaml')
 PERF = Perf(CONFIG_FILE)
 INJECT_CODE = PERF.injectjs('navtiming')
-API_PARAMS = PERF.getapiparams(es_create=True, log={
+API_PARAMS = PERF.getapiparams(es_create=False, log={
     'browser': BROWSER.name, 'env_tester': platform.system()})
 
 if INJECT_CODE is not False:
     TIMING = BROWSER.execute_script(INJECT_CODE)
     NAV_RESP = PERF.navtiming(TIMING, API_PARAMS)
 
-    if NAV_RESP is not False:
+    if 'assert' in NAV_RESP:
         print(
             'PERFORMANCE was',
             ('GOOD' if NAV_RESP['assert'] is True else "BAD") + '! - ',
-            str(NAV_RESP['export']['perf']['measured']),
-            '/ ' + str(NAV_RESP['export']['perf']['threshold'])
+            str(NAV_RESP['export']['act_pageLoadTime']),
+            '/ ' + str(NAV_RESP['export']['sla_pageLoadTime'])
         )
+    else:
+        print('Error - ', NAV_RESP)
 
 BROWSER.close()
