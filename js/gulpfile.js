@@ -5,7 +5,7 @@ const wdio = new Launcher(path.join(__dirname, 'wdio.conf.js'));
 
 let httpServer;
 
-gulp.task('e2e', () => {
+gulp.task('js_demo', () => {
   return wdio.run(code => {
     process.exit(code);
   }, error => {

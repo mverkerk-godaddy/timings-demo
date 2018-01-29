@@ -3,7 +3,7 @@
     "description": "Demo files for timings API demos and presentations",
     "version": "1.0.2",
     "scripts": {
-        "test": "mocha"
+        "test": "gulp js_demo --gulpfile gulpfile.js"
     },
     "repository": {
         "type": "git",

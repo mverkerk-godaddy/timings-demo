@@ -1,4 +1,4 @@
-PERF_API_URL: "http://timings-api.int.godaddy.com/v2/api/cicd/"    # the full fqdn of the API server
+PERF_API_URL: "http://localhost/v2/api/cicd/"    # the full fqdn of the API server
 api_timeout: 5               # timeout for the API in seconds (valid range: 2-30 seconds)
 api_params:                  # the "api parameters" that will be send to the API in the POST body
  sla:                           # This is the "flat SLA" - valid keys are "pageLoadTime" or "visualCompleteTime"
