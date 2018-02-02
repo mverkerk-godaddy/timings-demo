@@ -31,18 +31,18 @@ if INJECT_CODE is not False:
     # Get perf data from browser object
     TIMING = BROWSER.execute_script(INJECT_CODE)
     # Send perf data with parameters to API
-    NAV_RESP = PERF.navtiming(TIMING, API_PARAMS)
+    API_RESP = PERF.navtiming(TIMING, API_PARAMS)
 
     # Assert perf result
-    if NAV_RESP is not False:
+    if API_RESP is not False:
         print(
-            'PERFORMANCE of [' + NAV_RESP["export"]["dl"] + '] was ',
-            ('GOOD' if NAV_RESP['assert'] is True else "BAD") + '! - ',
-            str(NAV_RESP['export']['perf']['measured']),
-            '/ ' + str(NAV_RESP['export']['perf']['threshold'])
+            'PERFORMANCE of [' + API_RESP["export"]["dl"] + '] was ',
+            ('GOOD' if API_RESP['assert'] is True else "BAD") + '! - ',
+            str(API_RESP['export']['perf']['measured']),
+            '/ ' + str(API_RESP['export']['perf']['threshold'])
         )
     else:
-        print("NAV_RESP problem!")
+        print("API_RESP problem!")
 else:
     print("INJECT_CODE problem!")
 
