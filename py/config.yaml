@@ -16,8 +16,8 @@ api_params:                  # the "api parameters" that will be send to the API
   esCreate: false                   # Save results to elasticsearch
   passOnFailedAssert: false         # Pass the test, even when the performance is above the threshold
  log:                           # These key-value pairs will be stored in elasticsearch and can be used to slice & dice the data in Kibana
-  app_info: "Demo test"             # Info about the test(-step)
-  platform: "Windows"               # Environment of the test machine (local, saucelabs, selenium grid, etc.)
-  browser: "Demo browser"           # Browser used to run the test with
-  environment: "PROD"               # Environment of the target app (usually dev, test, or prod)
-  team: "DEMO TEAM"                 # THe name of the (test-)team 
+  test_info: Sample test_info       # Info about the test(-step)
+  env_tester: Sample tester         # Environment of the test machine (local, saucelabs, selenium grid, etc.)
+  browser: Sample browser           # Browser used to run the test with
+  env_target: Sample target         # Environment of the target app (usually dev, test, or prod)
+  team: DEMO TEAM                   # THe name of the (test-)team 
