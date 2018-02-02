@@ -1,9 +1,9 @@
 # timings-demo
-Sample tests scripts to demonstrate the [timings API](https://www.github.com/godaddy/timings). You can use these 
+Sample tests scripts to demonstrate the [timings API](https://www.github.com/godaddy/timings). You can copy/reference the test scripts in this repo to build your own "timings-enabled" scripts. You can find both JavaScript and Python based scripts in the `/js` and `/py` folders.
+
+You can also run the tests in this repo to test your **timings API**! See installation instructions below:
 
 ## Installation
-You can copy/reference the different test scripts in this repo to build your own "timings-enabled" scripts. You can find both JavaScript and Python based scripts in the `/js` and `/py` folders.
-
 If you actually want to run the test scripts:
 
 * **JavaScript:** clone repo with `git clone` and install dependencies with `npm i` (**run this from inside the `/js` sub-folder!**)
