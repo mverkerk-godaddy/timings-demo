@@ -8,7 +8,7 @@ Please set PERF_API_URL to the correct address of the API!!
 
 module.exports = {
     // Below is the full fqdn of the API server
-    "PERF_API_URL": "http://localhost/v2/api/cicd/",             // The full URL to the API host
+    "PERF_API_URL": "http://timings-api.int.godaddy.com/v2/api/cicd/",             // The full URL to the API host
     "api_timeout": 3000,                            // Timeout for the API - increase this if you're experiencing slow connection to the API
 
     // Below are your default "api parameters" that will be send to the API in the POST body - you can overwrite these with the `getApiParams()` method
@@ -33,10 +33,10 @@ module.exports = {
             "passOnFailedAssert": false             // Pass the test, even when the performance is above the threshold
         },
         "log": {                // These key-value pairs will be stored in elasticsearch and can be used to slice & dice the data in Kibana
-            "test_info": "Sample test_info-JS",     // Info about the test(-step)
-            "env_tester": "Sample tester",          // Environment of the test machine (local, saucelabs, selenium grid, etc.)
+            "app_info": "Sample test_info-JS",     // Info about the test(-step)
+            "platform": "Sample tester",          // Environment of the test machine (local, saucelabs, selenium grid, etc.)
             "browser": "Sample browser",            // Browser used to run the test with
-            "env_target": "Sample target",          // Environment of the target app (usually dev, test, or prod)
+            "environment": "Sample target",          // Environment of the target app (usually dev, test, or prod)
             "team": "DEMO"                          // THe name of the (test-)team 
         }
     }
