@@ -1,5 +1,8 @@
 # timings-demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Verkurkie/timings-demo.svg)](https://greenkeeper.io/)
+
+
 Sample tests scripts to demonstrate the [timings API](https://www.github.com/godaddy/timings). You can copy/reference the test scripts in this repo to build your own "timings-enabled" scripts. You can find both JavaScript and Python based scripts in the `/js` and `/py` folders.
 
 The scripts are implementing two of the timings API clients that are available here:
